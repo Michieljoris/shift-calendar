@@ -111,7 +111,7 @@ var exports = {
             // ,recaptcha: '<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>'
             // ,fragment: '<meta name="fragment" content="!">'
             
-            ,hello_world: '<h2>2Hello world. Build on this scaffold!!!</h2>'
+            ,hello_world: '<h2>Hello world. Build on this scaffold!!!</h2>'
         }
         ,metaBlock : {
             id: 'meta',
@@ -137,6 +137,7 @@ var exports = {
                 
                 // ,'vendor/h5bp.css'
                 // ,'vendor/checkboxes.css'
+                ,"../fullcalendar/fullcalendar/fullcalendar.css"
                 
                 ,'main.css'
             ]
@@ -146,6 +147,12 @@ var exports = {
             {
                 id: 'headJsBlock',
                 files: [
+                    ,"../fullcalendar/lib/jquery.min.js"
+                    ,"../fullcalendar/lib/jquery-ui.custom.min.js"
+                    ,"../fullcalendar/lib/moment.min.js"
+                    ,"../fullcalendar/fullcalendar/fullcalendar.js"
+                    ,"../fullcalendar/fullcalendar/gcal.js"
+                    // ,"../fullcalendar/lang/es.js"
                 ],
                 path: 'scripts/'
             },
@@ -153,7 +160,7 @@ var exports = {
                 id: 'jsBlock',
                 files: [
                     // 'bower/jquery/dist/jquery.js'
-                    //,'bower/bootstrap/dist/js/bootstrap.js'
+                    ,'bower/bootstrap/dist/js/bootstrap.js'
                     // ,'bower/foundation/js/foundation.js'
                     // ,'bower/angular/angular.js'
                     // ,'bower/angular-ui/build/angular-ui.js'
@@ -165,7 +172,8 @@ var exports = {
                     
                     // ,'router'
                     // ,'angular.js'
-                    ,'test.coffee'
+                    // ,'test.coffee'
+                    ,'main.js'
                     
                 ],
                 path: 'scripts/'
@@ -204,7 +212,8 @@ var exports = {
                ,src: 'html/body.html' 
                ,tagIdPostfix: '--' //can be overridden per template
                ,mapping: {
-                   hello_world: "hello_world"
+                   // hello_world: "hello_world"
+                   // ,fullcalendar: "fullcalendar"
                }
              }
             ,{  
